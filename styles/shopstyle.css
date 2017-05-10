@@ -1,0 +1,153 @@
+/* Color Guide */
+.sample {
+	color: #ffffff;
+	color: #F38630;
+	color: #A49286;
+	color: #E0D1B4;
+	color: #EBE4D2;
+	color: #F5F5F7;
+}
+
+}
+body, html {
+  background-color: #FEFEFA;
+  margin: 0;
+  padding: 0;
+}
+.dlm-header {
+	margin-top: 40px;
+	margin-bottom: 30px;
+	display:flex;
+}
+
+.dlm-logo {
+	max-width: 400px;
+	height: auto;
+}
+
+.dlm-logo img{
+	width: 100%;
+	height:auto;
+	margin:auto;
+}
+
+
+.dlm-navigation-wrap {
+	/*background: #EBE4D2;
+	border-bottom: 8px #E0D1B4 solid;
+	border-top: 2px #A49286 solid;*/
+}
+.dlm-navigation-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+	align-items:center;
+	flex-grow: 1;'
+	flex-wrap: wrap;
+}
+
+.dlm-navigation {
+	display:flex;
+	flex-grow:1;
+
+}
+nav {
+	margin-left: auto;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+	flex-grow: 1;
+}
+nav li {
+	display: inline;
+	padding-left: 20px;
+}
+nav a {
+	color: orange;
+	text-decoration: none;
+}
+nav li a {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+nav a:hover, nav a:active {
+	color: grey;
+}
+#pull {
+	display: none;
+	color: white;
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 600px) {
+
+	.dlm-header{
+		flex-wrap: wrap;
+	}
+	.dlm-navigation {
+		flex-wrap: wrap;
+	}
+	.dlm-logo {
+		margin: 0 auto;
+	}
+	.dlm-navigation-wrap {
+		display: none;
+	}
+	nav {
+  		width: 100%;
+  	}
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	nav li {
+		flex-grow: 1;
+		width: 100%;
+		padding: 10px 0 0;
+		text-align: center;
+	}
+	li:last-child {
+		padding-bottom: 10px;
+	}
+	#pull {
+		display: block;
+		background-color: rgb(128,120,118);
+		width: 100%;
+		position: relative;
+	}
+}
+.shop-container {
+  display: flex;
+  width: 100%;
+  height:auto;
+}
+
+.shop-item {
+  display: flex;
+
+}
+
+.shop-item img {
+  height: 300px;
+  width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+}

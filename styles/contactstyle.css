@@ -8,6 +8,102 @@
 	color: #F5F5F7;
 }
 
+body, html {
+  background-color: #FEFEFA;
+  margin: 0;
+  padding: 0;
+}
+
+.contactform{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 32px;
+    background: #FEFEFA;
+		border-style: solid;
+		border-color: #F5F5F7;
+		border-width: thin;
+}
+.contactform h1{
+    background: #FEFEFA;
+    padding: 10px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: orange;
+    margin: -16px -16px 16px -16px;
+}
+.contactform input[type="text"],
+.contactform input[type="email"],
+.contactform textarea,
+.contactform select
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: grey;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.contactform input[type="text"]:focus,
+.contactform input[type="email"]:focus,
+.contactform textarea:focus,
+.contactform select:focus
+{
+    box-shadow: 0 0 5px orange;
+    padding: 3%;
+    border: 1px solid orange;
+}
+
+.contactform input[type="submit"],
+.contactform input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: grey;
+    border-bottom: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+}
+.contactform input[type="submit"]:hover,
+.contactform input[type="button"]:hover{
+    background: orange;
+}
+
+body {
+	background-image: url(http://i.imgur.com/9Nze9yb.jpg);
+	background-repeat: no-repeat;
+	background-position:top center;
+}
+
+/*<div class="contactbackgroundimage">
+<a href="http://imgur.com/9Nze9yb"><img src="http://i.imgur.com/9Nze9yb.jpg" title="source: imgur.com" /></a>
+	<img src="http://i.imgur.com/3bgSB7o.jpg?1"/>
+</div>*/
+
+}
+.sample {
+	color: #ffffff;
+	color: #F38630;
+	color: #A49286;
+	color: #E0D1B4;
+	color: #EBE4D2;
+	color: #F5F5F7;
+}
+
 }
 body, html {
   background-color: #FEFEFA;
@@ -54,7 +150,6 @@ body, html {
 nav {
 	margin-left: auto;
 	font-family: 'Raleway', sans-serif;
-	font-size: 15px;
 }
 nav ul {
 	padding: 0;
@@ -85,34 +180,7 @@ nav a:hover, nav a:active {
 	text-decoration: none;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
-}
 
-.dlm-mainpage-slider {
-	width: 100%;
-}
-
-.dlm-mainpage-slider img {
-	height: 600px;
-}
-
-.slick-arrow.slick-prev:before,
-.slick-arrow.slick-next:before {
-	color: #F38630;
-	width: 35px;
-	height: 35px;
-}
-
-.slick-arrow.slick-prev,
-.slick-arrow.slick-next {
-	z-index: 1;
-}
-
-.slick-arrow.slick-prev {
-	left: 30px;
-}
-
-.slick-arrow.slick-next {
-	right: 30px;
 }
 /*Styles for screen 600px and lower*/
 @media screen and (max-width: 600px) {
@@ -176,120 +244,19 @@ nav a:hover, nav a:active {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-.gdnl::after{
-	margin: 1%;
-	content: "";
-	clear:both;
-	display: table;
-	width: 100%;
-
-}
-
-.gdnl img{
-	display:block;
-	width: 60%;
-	height: auto;
-	float: center;
-	margin:auto;
-}
-
-.aboutp {
-	display: block;
-	float: center;
-	width:60%;
-	margin: auto;
-	height: auto;
-	font-family:'Raleway', sans-serif;
-	color: #363b3f;
-	font-size: 15px;
-	padding: 1.5%;
-}
-.aboutp::after {
-  content: "";
-  clear: both;
-  display: table;
-	width: 100%;
-}
-
-.aboutpics {
-	display: flex;
-	width: 100%;
-	height: 250px;
-	justify-content: center;
-  align-items: center;
-}
-.aboutpics img {
-	width: auto;
-	height: 100%;
-}
-
-/*.dlm-footer {
-	display:inline-block;
-	margin-left: 95%;
-	margin-top: 15px;
-	margin-bottom: 20px;
-	height: 75px;
-} */
-
 .dlm-footer {
 	font: 95% Arial, Helvetica, sans-serif;
 	font: grey;
 	text-align: center;
 	background-color: #FEFEFA;
 	opacity: 0.8;
-	display:inline-block;
-	position: left;
+	display:block;
+	position: center;
 	padding: 2%;
 	margin:auto;
 	max-width: 500px;
 }
+
 .icons {
 	display:inline-flex;
-}
-
-.background {
-	background: url (img src="http://i.imgur.com/3bgSB7o.jpg?1");
-	background-position: right;
-	position:fixed;
-	align-items: right;
-	opacity: 1.0;
-}
-
-.workshoppic{
-	width:100%;
-	height:auto;
-	display: inline-flex;
-	position: relative;
-	left: 1%;
-	border: none;
-}
-
-.workshopicons {
-	display:inline-block;
-	width: 200px;
-	height:auto;
-	margin:10px;
-	border: 2px solid grey;
-}
-
-.workshoppic {
-	display: flex;
-	opacity: 0.90;
-	margin:auto;
-	justify-content:left;
-}
-.workshoppic img{
-	height:500px;
-	width: auto;
-}
-
-.workshopoptions {
-	display: flex;
-	opactity: 0.85;
-	margin: auto;
-	justify-content: space-between;
-}
-
-}
-
 }

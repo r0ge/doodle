@@ -1,14 +1,18 @@
 $(function() {
 	var pull = $('#pull');
 	var menu = $('.dlm-navigation-wrap');
-
+	var isMenuOpen = false;
+console.log('menu init');
   $(pull).on('click', function(e) {
     e.preventDefault();
     menu.slideToggle();
+		isMenuOpen = !isMenuOpen;
   });
   $(window).resize(function(){
       var w = $(window).width();
-      if(w > 600 && menu.is(':hidden')) {
+      if(w > 600 && (isMenuOpen || menu.is(':hidden'))) {
+				isMenuOpen = false;
+				console.log('menu altered');
         menu.removeAttr('style');
       }
   });
