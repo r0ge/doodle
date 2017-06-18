@@ -23,6 +23,7 @@ body, html {
 		border-style: solid;
 		border-color: #F5F5F7;
 		border-width: thin;
+		opacity: 0.9;
 }
 .contactform h1{
     background: #FEFEFA;
@@ -259,4 +260,15 @@ nav a:hover, nav a:active {
 
 .icons {
 	display:inline-flex;
+}
+
+.error {
+	color:red;
+	font-family: 'Raleway', sans-serif;
+}
+
+.success {
+	color:orange;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
 }

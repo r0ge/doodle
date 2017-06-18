@@ -8,6 +8,172 @@
 	color: #F5F5F7;
 }
 
+body, html {
+  background-color: #FEFEFA;
+  margin: 0;
+  padding: 0;
+}
+
+.shopbannerinfo {
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 600px;
+		width:100%;
+    margin: auto;
+    padding: 32px;
+		padding-bottom: 16px;
+    background: #FEFEFA;
+		border: none;
+}
+
+.shopbannerinfo p{
+	text-align: center;
+}
+
+.stores-navigation-wrap {
+	max-width: 1200px;
+	width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center flex-start;
+	align-items:center;
+	flex-grow: 1;'
+	flex-wrap: wrap;
+}
+
+.stores-navigation {
+	display:flex;
+	flex-grow:1;
+	width: 100%;
+	align-content: center;
+}
+.stores-navigation nav {
+	margin: auto;
+	font-family: 'Raleway', sans-serif;
+}
+.stores-navigation nav ul {
+	padding-bottom: 20px;
+	margin: 0;
+	flex-grow: 1;
+}
+.stores-navigation nav li {
+	display: inline;
+	margin:auto;
+	padding-left: 15px;
+}
+.stores-navigation nav a {
+	color: orange;
+	text-decoration: none;
+}
+.stores-navigation nav li a {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.stores-navigation nav a:hover, nav a:active {
+	color: grey;
+}
+
+.contactform{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 32px;
+    background: #FEFEFA;
+		border-style: solid;
+		border-color: #F5F5F7;
+		border-width: thin;
+}
+.contactform h1{
+    background: #FEFEFA;
+    padding: 10px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: orange;
+    margin: -16px -16px 16px -16px;
+}
+.contactform input[type="text"],
+.contactform input[type="email"],
+.contactform textarea,
+.contactform select
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: grey;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.contactform input[type="text"]:focus,
+.contactform input[type="email"]:focus,
+.contactform textarea:focus,
+.contactform select:focus
+{
+    box-shadow: 0 0 5px orange;
+    padding: 3%;
+    border: 1px solid orange;
+}
+
+.contactform input[type="submit"],
+.contactform input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: grey;
+    border-bottom: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+}
+.contactform input[type="submit"]:hover,
+.contactform input[type="button"]:hover{
+    background: orange;
+}
+.shopbanner img {
+	display: block;
+	max-width: 600px;
+	width: 100%;
+	height: auto;
+	float:center;
+	margin:auto;
+}
+
+.fullpageimage img {
+		display: block;
+		width:100%;
+		height: auto;
+		margin: auto;
+		float:center;
+}
+
+
+/*<div class="contactbackgroundimage">
+<a href="http://imgur.com/9Nze9yb"><img src="http://i.imgur.com/9Nze9yb.jpg" title="source: imgur.com" /></a>
+	<img src="http://i.imgur.com/3bgSB7o.jpg?1"/>
+</div>*/
+
+}
+.sample {
+	color: #ffffff;
+	color: #F38630;
+	color: #A49286;
+	color: #E0D1B4;
+	color: #EBE4D2;
+	color: #F5F5F7;
+}
+
 }
 body, html {
   background-color: #FEFEFA;
@@ -51,30 +217,29 @@ body, html {
 	flex-grow:1;
 
 }
-nav {
+.dlm-navigation nav {
 	margin-left: auto;
 	font-family: 'Raleway', sans-serif;
-	font-size: 15px;
 }
-nav ul {
+.dlm-navigation nav ul {
 	padding: 0;
 	margin: 0;
 	flex-grow: 1;
 }
-nav li {
+.dlm-navigation nav li {
 	display: inline;
 	padding-left: 20px;
 }
-nav a {
+.dlm-navigation nav a {
 	color: orange;
 	text-decoration: none;
 }
-nav li a {
+.dlm-navigation nav li a {
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 }
-nav a:hover, nav a:active {
+.dlm-navigation nav a:hover, nav a:active {
 	color: grey;
 }
 #pull {
@@ -85,6 +250,7 @@ nav a:hover, nav a:active {
 	text-decoration: none;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
+
 }
 /*Styles for screen 600px and lower*/
 @media screen and (max-width: 600px) {
@@ -108,10 +274,16 @@ nav a:hover, nav a:active {
 		display: flex;
 		flex-wrap: wrap;
 	}
-	nav li {
+	.dlm-navigation nav li {
 		flex-grow: 1;
 		width: 100%;
 		padding: 10px 0 0;
+		text-align: center;
+	}
+	.stores-navigation nav li {
+		flex-grow: 1;
+		width: 100%;
+		padding: 0px 0 0;
 		text-align: center;
 	}
 	li:last-child {
@@ -124,30 +296,54 @@ nav a:hover, nav a:active {
 		position: relative;
 	}
 }
-.shop-container {
-  display: flex;
-  width: 100%;
-  height:auto;
+
+/* Responsive Column*/
+
+{box-sizing: border-box;
 }
 
-.shop-item {
-  display: flex;
-
+[class*="col-"] {
+    float: left;
+    padding: 15px;
 }
 
-.shop-item img {
-  height: 300px;
-  width: auto;
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.dlm-footer {
+	font: 95% Arial, Helvetica, sans-serif;
+	font: grey;
+	text-align: center;
+	background-color: #FEFEFA;
+	opacity: 0.8;
+	display:block;
+	position: center;
+	padding: 2%;
+	margin:auto;
+	max-width: 500px;
 }
 
+.icons {
+	display:inline-flex;
+}
 
+.error {
+	color:red;
+	font-family: 'Raleway', sans-serif;
+}
 
-
-
-
-
-
-
-
-
+.success {
+	color:orange;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
 }
